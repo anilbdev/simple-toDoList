@@ -21,25 +21,29 @@
             <div class="card" style="width: 18rem;">
                 <div class="card-body">
                     <!-- form -->
-                    <form action="#" id="myForm">
+                    <form action="home.html" id="myForm" >
                         <h5 class="card-title text-center">Login</h5>
                         <!-- user name -->
                         <div class="form-outline form-white mb-4 input-group">
-                            <input type="text" class="form-control" id="inputUserName" placeholder="Username">
+                            <input type="text" class="form-control" 
+                            id="inputUserName" placeholder="Username"
+                            name="username">
                             <i class="bi bi-check-circle-fill"></i>
                             <i class="bi bi-exclamation-circle-fill"></i>
                             <p>Error Message</p>
                         </div>
                         <!-- password -->
                          <div class="form-outline form-white mb-4 input-group ">
-                            <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                            <input type="password" class="form-control" 
+                            id="inputPassword" placeholder="Password"
+                            name="password">
                             <i class="bi bi-check-circle-fill"></i>
                             <i class="bi bi-exclamation-circle-fill"></i>
                             <p>Error Message</p>
                         </div>
                         <!-- button -->
                         <div class="d-flex justify-content-center align-items-center ">
-                            <input type="submit" class="btn btn-primary " value="Login" />
+                            <button onclick="validation()"  class="btn btn-primary " >Login </button>
                         </div>
                     </form>
                 </div>
