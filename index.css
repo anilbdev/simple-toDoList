@@ -1,0 +1,24 @@
+.input-group{
+    position: relative;   
+}
+.success input{
+    border: greenyellow solid 2px;
+}
+.input-group i{
+    position: absolute;   
+    right: 20px;
+    top: 5px;
+    visibility: hidden;
+}
+.success i.bi-check-circle-fill{
+    color: greenyellow;
+    visibility: visible;
+}
+.input-group p{
+    position: absolute;
+    top: 35px;
+    left:5px;
+    font-size: smaller;
+    color: red;
+    visibility: hidden;
+}

@@ -1,0 +1,3 @@
+const validate=()=>{
+    return true
+}
