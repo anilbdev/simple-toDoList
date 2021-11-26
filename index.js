@@ -16,7 +16,7 @@ const validation = () => {
         setError(userName, 'Username incorrect')
     }
     //password
-    if (password.value.trim() == 1234) {
+    if (password.value.trim() == 12345) {
         setSuccess(password)
         passwordValue=true
     } else {
