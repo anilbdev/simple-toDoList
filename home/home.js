@@ -5,10 +5,12 @@ fetchToDoList=()=>{
         if (this.readyState == 4 && this.status == 200) {
             var response = JSON.parse(this.responseText);
            
-  
+            var output = ''
             for(i = 0;i<20;i++){
-                console.log(response[i].title);
+              output += `<input type="checkbox" id="${i}" name="${response[i].title}">
+              <label for="${i}">${response[i].title}</label><br>`
             }
+            display.innerHTML = output
            
         }
     };
