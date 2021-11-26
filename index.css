@@ -4,6 +4,9 @@
 .success input{
     border: greenyellow solid 2px;
 }
+.error input{
+    border: red solid 2px;
+}
 .input-group i{
     position: absolute;   
     right: 20px;
@@ -14,11 +17,18 @@
     color: greenyellow;
     visibility: visible;
 }
+.error i.bi-exclamation-circle-fill{
+    color: red;
+    visibility: visible;
+}
 .input-group p{
     position: absolute;
-    top: 35px;
+    top: 37px;
     left:5px;
-    font-size: smaller;
+    font-size: 11px;
     color: red;
     visibility: hidden;
+}
+.error p{
+    visibility: visible;
 }
