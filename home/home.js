@@ -6,9 +6,9 @@ fetchToDoList = () => {
         if (this.readyState == 4 && this.status == 200) {
             var response = JSON.parse(this.responseText);
             var output = ''
-            for (i = 0; i < 20; i++) {
+            for (i = 0; i < 200; i++) {
                 output += `<input class='list' type="checkbox" id="${i}" name="${response[i].title}">
-              <label for="${i}">${response[i].title}</label><br>`
+              <label for="${i}">${response[i].title}</label><hr>`
             }
             display.innerHTML = output
             test()
@@ -22,8 +22,7 @@ const test = ()=>{
     console.log('hello1');
     const checkboxes =  document.getElementsByTagName("input")
     console.log(checkboxes);
-    for (const item of checkboxes) {
-        // console.log(item);
+    for (const item of checkboxes) {    
         item.addEventListener('click',e =>{
             var count = document.querySelectorAll('input[type="checkbox"]:checked').length
             console.log(count);
@@ -36,11 +35,6 @@ const test = ()=>{
       }
 }
 
-// document.querySelectorAll('list').forEach(item => {
-//     console.log('hello');
-//     item.addEventListener('click', event => {
-//      var count = document.querySelectorAll('input[type="checkbox"]:checked').length
-//     //  console.log('hello');
-//     })
-//   })
-
+const route = ()=>{
+    window.location = "../index.html"
+}

@@ -1,10 +1,7 @@
 const form = document.querySelector('#myForm')
 const userName = document.querySelector('#inputUserName')
 const password = document.querySelector('#inputPassword')
-form.addEventListener('submit', (e) => {
-    e.preventDefault()
-    // validation()
-})
+
 const validation = () => {
     userNameValue=false
     passwordValue=false

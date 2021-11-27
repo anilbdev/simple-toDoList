@@ -1,0 +1,9 @@
+#displayDataContainter{
+    height: 60vh;
+    
+    border-radius: 10px;
+    overflow: scroll;
+    margin-top: 2vh;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 15px;
+}
