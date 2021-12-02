@@ -1,7 +1,9 @@
 const form = document.querySelector('#myForm')
 const userName = document.querySelector('#inputUserName')
 const password = document.querySelector('#inputPassword')
-
+form.addEventListener("click", function(event){
+    event.preventDefault()
+  });
 const validation = () => {
     userNameValue=false
     passwordValue=false
